@@ -31,6 +31,7 @@ public class BaseBallGameController {
             isValid(user.getNumberList());
             computer.creatAnswerList();
             calculateResult(user.getNumberList(),computer.getAnswerList());
+            outputView.printResult(user.getStrikeCount(), user.getBallCount());
 
 
         }while (endSign);

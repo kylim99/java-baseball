@@ -39,4 +39,12 @@ public class User {
     public void plusBallCount(){
         this.ballCount += 1;
     }
+
+    public int getBallCount() {
+        return ballCount -= strikeCount;
+    }
+
+    public int getStrikeCount() {
+        return strikeCount;
+    }
 }
