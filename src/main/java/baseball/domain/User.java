@@ -12,8 +12,11 @@ public class User {
 
     public void createList(String numbers){
         for(int i = 0 ; i < numbers.length(); i++){
-            numberList.add(parseInt(numbers.charAt(i)));
+            numberList.add(charToInt(numbers.charAt(i)));
         }
+    }
+    public int charToInt(char number){
+        return parseInt(number);
     }
     public int parseInt(char number){
         try{
