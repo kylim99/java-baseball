@@ -25,4 +25,7 @@ public class User {
             throw new IllegalArgumentException(ERROR_MESSAGE);
         }
     }
+    public List<Integer> getNumberList(){
+        return this.numberList;
+    }
 }
