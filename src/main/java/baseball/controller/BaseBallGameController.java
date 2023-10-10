@@ -1,5 +1,6 @@
 package baseball.controller;
 
+import baseball.domain.Computer;
 import baseball.domain.User;
 import baseball.validation.Validation;
 import baseball.veiw.InputView;
@@ -13,6 +14,7 @@ public class BaseBallGameController {
     private final OutputView outputView = new OutputView();
     private final InputView inputView = new InputView();
     private final User user = new User();
+    private final Computer computer = new Computer();
     private final boolean endSign = false;
 
     public void start(){
@@ -24,6 +26,7 @@ public class BaseBallGameController {
         do{
             user.createList(inputView.readNumber());
             isValid(user.getNumberList());
+            computer.creatAnswerList();
 
 
         }while (endSign);
