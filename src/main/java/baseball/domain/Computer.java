@@ -8,7 +8,7 @@ import java.util.List;
 import static baseball.constant.Constant.*;
 
 public class Computer {
-    private List<Integer> answerList = new ArrayList<>();
+    private final List<Integer> answerList = new ArrayList<>();
 
     public void creatAnswerList(){
         while (answerList.size() < LIST_LENGTH) {
@@ -17,5 +17,8 @@ public class Computer {
                 answerList.add(randomNumber);
             }
         }
+    }
+    public List<Integer> getAnswerList(){
+        return answerList;
     }
 }
